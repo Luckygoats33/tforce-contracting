@@ -18,6 +18,7 @@
 <meta name="theme-color" content="#0d0d0d">
 <link rel="icon" type="image/png" href="../images/logo.png">
 <link rel="stylesheet" href="../styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Carpentry","provider":{"@type":"GeneralContractor","name":"T-Force Contracting","telephone":"+15165219815","url":"https://tforcecontracting.com"},"areaServed":{"@type":"AdministrativeArea","name":"Long Island, NY"},"description":"Residential carpentry services including custom trim, crown molding, built-in shelving, door installation, and structural carpentry for Long Island homeowners."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you build custom built-ins?","acceptedAnswer":{"@type":"Answer","text":"Yes. We design and build custom bookshelves, entertainment centers, window seats, mudroom cubbies, and other built-in cabinetry."}},{"@type":"Question","name":"Can you match existing trim in an older home?","acceptedAnswer":{"@type":"Answer","text":"In most cases, yes. We can mill custom profiles to match existing trim, or source matching profiles from specialty suppliers."}},{"@type":"Question","name":"Do you do structural carpentry?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle framing modifications for remodeling projects — removing or adding walls, reinforcing joists, installing beams."}},{"@type":"Question","name":"What's the difference between a carpenter and a general contractor?","acceptedAnswer":{"@type":"Answer","text":"A carpenter specializes in wood framing and finish work. T-Force combines carpentry with general contracting — we handle carpentry along with all the other trades your project needs."}}]}</script>
 <script type="application/ld+json">
@@ -111,7 +112,17 @@
 
 <script>
 function toggleMobileMenu(btn){var nav=document.querySelector('.nav-links');var open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);nav.classList.toggle('nav-open',!open);btn.innerHTML=open?'&#9776;':'&#10005;';document.body.style.overflow=open?'':'hidden';}
-document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){var nav=document.querySelector('.nav-links');var btn=document.querySelector('.nav-toggle');if(nav.classList.contains('nav-open')){nav.classList.remove('nav-open');btn.setAttribute('aria-expanded','false');btn.innerHTML='&#9776;';document.body.style.overflow='';}});});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){var nav=document.querySelector('.nav-links');var btn=document.querySelector('.nav-toggle');if(nav.classList.contains('nav-open')){nav.classList.remove('nav-open');btn.setAttribute('aria-expanded','false');btn.innerHTML='&#9776;';document.body.style.overflow='';}});}
+/* Mobile dropdown toggle */
+document.querySelectorAll('.has-dropdown > a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(window.innerWidth<=900){
+      e.preventDefault();
+      a.closest('.has-dropdown').classList.toggle('dropdown-open');
+    }
+  });
+});
+);
 function openEstimate(e){if(e)e.preventDefault();document.getElementById('estimateModal').classList.add('active');document.body.style.overflow='hidden';var m=document.querySelector('.mobile-cta');if(m)m.style.display='none';}
 function closeEstimate(){document.getElementById('estimateModal').classList.remove('active');document.body.style.overflow='';var m=document.querySelector('.mobile-cta');if(m)m.style.display='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEstimate();});

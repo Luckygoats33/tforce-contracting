@@ -11,13 +11,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tforcecontracting.com/contact.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image" content="https://tforcecontracting.com/images/logo.png">
+<meta property="og:image" content="https://tforcecontracting.com/images/hero-construction.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
 <meta name="theme-color" content="#0d0d0d">
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 
 <script type="application/ld+json">
 {
@@ -416,6 +417,16 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
       document.body.style.overflow='';
     }
   });
+
+/* Mobile dropdown toggle */
+document.querySelectorAll('.has-dropdown > a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(window.innerWidth<=900){
+      e.preventDefault();
+      a.closest('.has-dropdown').classList.toggle('dropdown-open');
+    }
+  });
+});
 });
 
 /* Estimate Modal */

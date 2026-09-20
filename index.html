@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>T-Force Contracting | Residential Contractor Long Island NY</title>
-<meta name="description" content="T-Force Contracting provides dependable residential construction, remodeling, repair, and improvement services on Long Island, NY. Kitchens, bathrooms, roofing, flooring, painting, siding, windows, masonry, and carpentry. Call (516) 521-9815 for a free estimate.">
+<meta name="description" content="T-Force Contracting — residential construction, remodeling, and home improvement on Long Island, NY. Kitchens, bathrooms, roofing, flooring, and more. Free estimates.">
 <link rel="canonical" href="https://tforcecontracting.com/">
 <meta property="og:title" content="T-Force Contracting | Residential Contractor Long Island NY">
 <meta property="og:description" content="Dependable residential construction, remodeling, and home improvement services on Long Island. Free estimates. Call (516) 521-9815.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tforcecontracting.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:image" content="https://tforcecontracting.com/images/logo.png">
+<meta property="og:image" content="https://tforcecontracting.com/images/hero-construction.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
@@ -19,6 +19,7 @@
 <link rel="icon" type="image/png" href="images/logo.png">
 <link rel="preload" as="image" href="images/hero-construction.jpg">
 <link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
 
 <script type="application/ld+json">
 {
@@ -98,7 +99,7 @@
      ═══════════════════════════════════════ -->
 <section class="hero hero-clipped" id="main">
   <div class="hero-bg" style="background-image:url('images/hero-construction.jpg');"></div>
-  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline poster="images/hero-construction.jpg">
+  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero-construction.jpg">
     <source src="images/hero-video.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
@@ -390,7 +391,7 @@
 
     <div class="reviews-featured">
       <div class="review-large reveal">
-        <div class="review-stars" style="position:relative;z-index:1;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-stars" style="position:relative;z-index:1;" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text" style="position:relative;z-index:1;font-size:1.1rem;line-height:1.7;margin:16px 0;">"T-Force completely transformed our kitchen. From demolition to the final coat of paint, the crew was professional, on time, and meticulous. We couldn't be happier with the results. They handled everything &mdash; cabinets, countertops, flooring, and electrical &mdash; all under one roof."</p>
         <p class="review-author" style="position:relative;z-index:1;"><strong>Satisfied Homeowner</strong></p>
         <p class="review-location" style="position:relative;z-index:1;">Nassau County, NY &mdash; Kitchen Remodel</p>
@@ -398,14 +399,14 @@
 
       <div class="review-small-stack">
         <div class="review-small reveal stagger-1">
-          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="review-text">"We needed a new roof and siding after storm damage. T-Force handled everything &mdash; insurance coordination, materials, and installation. The house looks brand new."</p>
           <p class="review-author"><strong>Satisfied Homeowner</strong></p>
           <p class="review-location">Long Island, NY</p>
         </div>
 
         <div class="review-small reveal stagger-2">
-          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="review-text">"What I appreciated most was the communication. They showed up when they said they would, kept the site clean, and the tile work in our bathroom is flawless."</p>
           <p class="review-author"><strong>Satisfied Homeowner</strong></p>
           <p class="review-location">Nassau County, NY</p>
@@ -646,6 +647,16 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
       btn.setAttribute('aria-expanded','false');
       btn.innerHTML='&#9776;';
       document.body.style.overflow='';
+    }
+  });
+});
+
+/* Mobile dropdown toggle */
+document.querySelectorAll('.has-dropdown > a').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(window.innerWidth<=900){
+      e.preventDefault();
+      a.closest('.has-dropdown').classList.toggle('dropdown-open');
     }
   });
 });
