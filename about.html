@@ -79,10 +79,13 @@
 </nav>
 
 <!-- PAGE HEADER -->
-<div class="page-header" id="main">
-  <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; About</div>
-  <h1>About T-Force Contracting</h1>
-  <p>Dependable residential construction, remodeling, and home improvement services for Long Island homeowners.</p>
+<div class="page-header" id="main" style="background-image:url('images/team-photo.jpg');background-size:cover;background-position:center 20%;min-height:300px;display:flex;align-items:center;position:relative;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,13,0.4),rgba(13,13,13,0.88));"></div>
+  <div class="wrap" style="position:relative;z-index:2;padding:120px 24px 40px;">
+    <div class="breadcrumb" style="margin-bottom:12px;"><a href="index.html">Home</a> &rsaquo; About</div>
+    <h1 style="color:#fff;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;">About T-Force Contracting</h1>
+    <p style="color:rgba(255,255,255,0.7);max-width:600px;">Dependable residential construction, remodeling, and home improvement services for Long Island homeowners.</p>
+  </div>
 </div>
 
 <!-- ABOUT: STORY -->
@@ -101,7 +104,7 @@
         </div>
       </div>
       <div class="expertise-image">
-        <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--charcoal-mid),var(--charcoal-deep));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(0,230,118,0.15);">&#127968;</div>
+        <img src="images/team-photo.jpg" alt="T-Force Contracting team on a residential job site" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 20%;border-radius:var(--radius-lg);">
       </div>
     </div>
   </div>
@@ -148,22 +151,34 @@
     <p class="section-label reveal">What We Do</p>
     <h2 class="section-title reveal">One Team for Every Home Project</h2>
     <p class="section-subtitle reveal">T-Force handles multiple trades under one roof &mdash; so you get consistent quality, clear communication, and a single point of contact from start to finish.</p>
-    <div class="service-grid">
-      <div class="service-card reveal stagger-1" style="cursor:default;">
-        <div class="service-icon">&#127859;</div>
-        <h3>Interior Remodeling</h3>
-        <p>Kitchen remodeling, bathroom remodeling, flooring, tile, painting, carpentry, and general interior repairs.</p>
-      </div>
-      <div class="service-card reveal stagger-2" style="cursor:default;">
-        <div class="service-icon">&#127969;</div>
-        <h3>Exterior Improvements</h3>
-        <p>Roofing, siding, doors, windows, masonry, exterior painting, and general exterior repairs.</p>
-      </div>
-      <div class="service-card reveal stagger-3" style="cursor:default;">
-        <div class="service-icon">&#128736;</div>
-        <h3>Additional Services</h3>
-        <p>Home repairs, renovations, custom carpentry, and residential improvement projects of all sizes.</p>
-      </div>
+    <div class="bento-grid">
+      <a href="services/kitchen-remodeling.html" class="bento-card featured reveal stagger-1">
+        <img src="images/svc-kitchen.jpg" alt="Kitchen remodeling" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Interior</span>
+          <h3>Interior Remodeling</h3>
+          <p class="bento-link">Kitchens, bathrooms, flooring, tile, painting &amp; carpentry</p>
+        </div>
+      </a>
+      <a href="services/roofing.html" class="bento-card reveal stagger-2">
+        <img src="images/svc-roofing.jpg" alt="Roofing installation" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Exterior</span>
+          <h3>Exterior Improvements</h3>
+          <p class="bento-link">Roofing, siding, windows, doors &amp; masonry</p>
+        </div>
+      </a>
+      <a href="services/general-contracting.html" class="bento-card reveal stagger-3">
+        <img src="images/team-photo.jpg" alt="T-Force Contracting team" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Full Service</span>
+          <h3>General Contracting</h3>
+          <p class="bento-link">Home repairs, renovations &amp; custom projects</p>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -285,13 +300,13 @@
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-cta">
   <div class="mobile-cta-row">
-    <a href="#" class="cta-estimate" onclick="openEstimate(event)">&#128221; Free Estimate</a>
-    <a href="tel:+15165219815" class="cta-call">&#9742; Call Now</a>
+    <a href="#" class="cta-estimate" onclick="openEstimate(event)">Free Estimate</a>
+    <a href="tel:+15165219815" class="cta-call">Call Now</a>
   </div>
 </div>
 
 <!-- FLOATING ESTIMATE BUTTON (desktop) -->
-<a href="#" class="floating-estimate" onclick="openEstimate(event)" id="floatingBtn">&#128221; Free Estimate</a>
+<a href="#" class="floating-estimate" onclick="openEstimate(event)" id="floatingBtn">Free Estimate</a>
 
 <!-- ESTIMATE MODAL -->
 <div class="estimate-modal" id="estimateModal" role="dialog" aria-modal="true" aria-label="Request a free estimate">
@@ -357,7 +372,7 @@
       <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Request &#8594;</button>
     </form>
     <div class="estimate-success" id="estimateSuccess" style="display:none;">
-      <div style="font-size:2rem;margin-bottom:0.5rem;">&#9989;</div>
+      <div style="font-size:2rem;margin-bottom:0.5rem;color:var(--green);">&#10003;</div>
       <h3 style="color:var(--white);margin-bottom:8px;">Request Received!</h3>
       <p>We'll get back to you within 24 hours. For immediate assistance, call <a href="tel:+15165219815">(516) 521-9815</a>.</p>
     </div>
