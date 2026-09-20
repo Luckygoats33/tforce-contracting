@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Project Gallery | T-Force Contracting | Long Island NY</title>
+<meta name="description" content="Browse completed residential projects by T-Force Contracting — kitchen remodels, bathroom renovations, roofing, flooring, painting, siding, masonry, and carpentry on Long Island, NY.">
+<link rel="canonical" href="https://tforcecontracting.com/gallery.html">
+<meta property="og:title" content="Project Gallery | T-Force Contracting">
+<meta property="og:description" content="Browse completed residential projects — kitchens, bathrooms, roofing, flooring, painting, and more on Long Island.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tforcecontracting.com/gallery.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#0d0d0d">
+<link rel="stylesheet" href="styles.css">
+<style>
+.filter-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:40px;}
+.filter-tab{padding:8px 20px;border-radius:100px;background:var(--charcoal-card);border:1px solid var(--border);font-size:.82rem;font-weight:600;color:var(--white-soft);cursor:pointer;transition:all var(--transition);font-family:inherit;}
+.filter-tab:hover,.filter-tab.active{border-color:var(--green);color:var(--green);background:var(--green-glow);}
+.gallery-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--charcoal-mid),var(--charcoal-deep));font-size:3.5rem;gap:8px;}
+.gallery-placeholder span{font-size:.75rem;font-weight:600;color:var(--white-muted);text-transform:uppercase;letter-spacing:.1em;}
+.gallery-item[data-hidden="true"]{display:none;}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- NAV -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="T-Force Contracting - home">
+      <div class="nav-logo-text"><span class="logo-name">T-FORCE</span><span class="logo-tagline">Contracting</span></div>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleMobileMenu(this)">&#9776;</button>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="services.html">Services <span class="caret"></span></a>
+        <ul class="nav-dropdown">
+          <li><a href="services/kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="services/bathroom-remodeling.html">Bathroom Remodeling</a></li>
+          <li><a href="services/roofing.html">Roofing</a></li>
+          <li><a href="services/flooring-and-tile.html">Flooring &amp; Tile</a></li>
+          <li><a href="services/painting.html">Interior Painting</a></li>
+          <li><a href="services/siding.html">Siding</a></li>
+          <li><a href="services/windows-and-doors.html">Windows &amp; Doors</a></li>
+          <li><a href="services/masonry.html">Masonry</a></li>
+          <li><a href="services/carpentry.html">Carpentry</a></li>
+          <li><a href="services/general-contracting.html">General Contracting</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html" style="color:var(--green);">Projects</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="nav-cta" onclick="openEstimate(event)">Free Estimate</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header" id="main">
+  <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Projects</div>
+  <h1>Our Work</h1>
+  <p>Browse completed residential projects across Long Island. From kitchens and bathrooms to roofing, painting, and exterior improvements.</p>
+</div>
+
+<!-- GALLERY -->
+<section class="content-section">
+  <div class="wrap">
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All Projects</button>
+      <button class="filter-tab" data-filter="kitchen">Kitchens</button>
+      <button class="filter-tab" data-filter="bathroom">Bathrooms</button>
+      <button class="filter-tab" data-filter="flooring">Flooring</button>
+      <button class="filter-tab" data-filter="roofing">Roofing</button>
+      <button class="filter-tab" data-filter="painting">Painting</button>
+      <button class="filter-tab" data-filter="exterior">Exterior</button>
+      <button class="filter-tab" data-filter="masonry">Masonry &amp; Carpentry</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal stagger-1" data-category="kitchen">
+        <div class="gallery-placeholder">&#127859;<span>Kitchen</span></div>
+        <div class="gallery-caption">Complete kitchen renovation with custom cabinetry, quartz countertops, tile backsplash, and new appliance layout &mdash; Hempstead, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-2" data-category="kitchen">
+        <div class="gallery-placeholder">&#127859;<span>Kitchen</span></div>
+        <div class="gallery-caption">Open-concept kitchen remodel with island, hardwood flooring, recessed lighting, and painted cabinets &mdash; Garden City, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-3" data-category="bathroom">
+        <div class="gallery-placeholder">&#128705;<span>Bathroom</span></div>
+        <div class="gallery-caption">Full bathroom renovation with walk-in tile shower, vanity replacement, new flooring, and updated fixtures &mdash; Mineola, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-4" data-category="bathroom">
+        <div class="gallery-placeholder">&#128705;<span>Bathroom</span></div>
+        <div class="gallery-caption">Master bathroom remodel with freestanding tub, dual vanity, heated floors, and accent tile wall &mdash; Massapequa, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-1" data-category="roofing">
+        <div class="gallery-placeholder">&#127969;<span>Roofing</span></div>
+        <div class="gallery-caption">Full roof tear-off and replacement with architectural shingles, new flashing, and ridge vent installation &mdash; Levittown, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-2" data-category="roofing">
+        <div class="gallery-placeholder">&#127969;<span>Roofing</span></div>
+        <div class="gallery-caption">Storm damage roof repair with matching shingle replacement, soffit repair, and gutter installation &mdash; Freeport, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-3" data-category="flooring">
+        <div class="gallery-placeholder">&#129521;<span>Flooring</span></div>
+        <div class="gallery-caption">Whole-home hardwood flooring installation with transitions, baseboards, and stain-matched finish &mdash; Westbury, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-4" data-category="flooring">
+        <div class="gallery-placeholder">&#129521;<span>Flooring</span></div>
+        <div class="gallery-caption">Porcelain tile installation in kitchen and entryway with decorative border and heated subfloor &mdash; Oceanside, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-1" data-category="painting">
+        <div class="gallery-placeholder">&#127912;<span>Painting</span></div>
+        <div class="gallery-caption">Full interior repaint of 4-bedroom colonial with trim, doors, ceilings, and accent wall &mdash; Lynbrook, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-2" data-category="exterior">
+        <div class="gallery-placeholder">&#128423;<span>Exterior</span></div>
+        <div class="gallery-caption">Vinyl siding replacement with house wrap, window trim, and exterior paint on a Cape Cod home &mdash; Valley Stream, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-3" data-category="exterior">
+        <div class="gallery-placeholder">&#128423;<span>Exterior</span></div>
+        <div class="gallery-caption">Window and door replacement throughout — energy-efficient double-pane with custom trim and hardware &mdash; Bellmore, NY</div>
+      </div>
+
+      <div class="gallery-item reveal stagger-4" data-category="masonry">
+        <div class="gallery-placeholder">&#129521;<span>Masonry</span></div>
+        <div class="gallery-caption">Front stoop and walkway rebuild with natural stone, retaining wall, and custom handrail &mdash; Franklin Square, NY</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <div class="wrap" style="position:relative;z-index:2;">
+    <h2>Have a Project in Mind?</h2>
+    <p>Get a free, no-obligation estimate. We'll assess your needs, explain your options, and provide honest pricing.</p>
+    <a href="tel:+15165219815" class="cta-phone">(516) 521-9815</a>
+    <div class="cta-actions">
+      <a href="#" class="btn-white" onclick="openEstimate(event)">Get a Free Estimate &#8594;</a>
+      <a href="contact.html" class="btn-outline-white">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" style="color:#fff;font-weight:800;font-size:1.2rem;text-decoration:none;">T-FORCE <span style="color:var(--green);">CONTRACTING</span></a>
+        <p>Dependable residential construction, remodeling, repair, and improvement services for homeowners on Long Island, NY.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services/kitchen-remodeling.html">Kitchen Remodeling</a></li>
+          <li><a href="services/bathroom-remodeling.html">Bathroom Remodeling</a></li>
+          <li><a href="services/roofing.html">Roofing</a></li>
+          <li><a href="services/flooring-and-tile.html">Flooring &amp; Tile</a></li>
+          <li><a href="services/painting.html">Painting</a></li>
+          <li><a href="services/siding.html">Siding</a></li>
+          <li><a href="services/windows-and-doors.html">Windows &amp; Doors</a></li>
+          <li><a href="services/masonry.html">Masonry</a></li>
+          <li><a href="services/carpentry.html">Carpentry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+15165219815">(516) 521-9815</a></li>
+          <li>Long Island, NY</li>
+          <li>Nassau &amp; Suffolk County</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-areas">
+      <h3>Areas We Serve</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:0.4rem;">
+        <span class="area-tag">Hempstead</span><span class="area-tag">Freeport</span><span class="area-tag">Garden City</span><span class="area-tag">Mineola</span><span class="area-tag">Westbury</span><span class="area-tag">Hicksville</span><span class="area-tag">Levittown</span><span class="area-tag">Massapequa</span><span class="area-tag">Oceanside</span><span class="area-tag">Valley Stream</span><span class="area-tag">Lynbrook</span><span class="area-tag">Franklin Square</span><span class="area-tag">Merrick</span><span class="area-tag">Bellmore</span><span class="area-tag">Wantagh</span><span class="area-tag">Seaford</span><span class="area-tag">Baldwin</span><span class="area-tag">Rockville Centre</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 T-Force Contracting. All rights reserved.</span>
+      <span>Licensed &amp; Insured</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <div class="mobile-cta-row">
+    <a href="#" class="cta-estimate" onclick="openEstimate(event)">&#128221; Free Estimate</a>
+    <a href="tel:+15165219815" class="cta-call">&#9742; Call Now</a>
+  </div>
+</div>
+
+<!-- FLOATING ESTIMATE BUTTON -->
+<a href="#" class="floating-estimate" onclick="openEstimate(event)" id="floatingBtn">&#128221; Free Estimate</a>
+
+<!-- ESTIMATE MODAL -->
+<div class="estimate-modal" id="estimateModal" role="dialog" aria-modal="true" aria-label="Request a free estimate">
+  <div class="estimate-card">
+    <button class="estimate-close" onclick="closeEstimate()" aria-label="Close">&times;</button>
+    <h2 class="estimate-title">Free Estimate</h2>
+    <p class="estimate-sub">Tell us about your project and we'll get back to you within 24 hours.</p>
+    <form id="estimateForm" onsubmit="submitEstimate(event)">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_source" value="Website - Gallery">
+      <input type="hidden" name="_subject" value="New Estimate Request - T-Force Contracting">
+      <div class="form-row">
+        <div class="form-group"><label for="est-name">Name *</label><input type="text" id="est-name" name="name" required autocomplete="name"></div>
+        <div class="form-group"><label for="est-phone">Phone *</label><input type="tel" id="est-phone" name="phone" required autocomplete="tel"></div>
+      </div>
+      <div class="form-group"><label for="est-email">Email</label><input type="email" id="est-email" name="email" autocomplete="email"></div>
+      <div class="form-group">
+        <label for="est-service">Service Needed</label>
+        <select id="est-service" name="service">
+          <option value="">Select a service...</option>
+          <option>Kitchen Remodeling</option><option>Bathroom Remodeling</option><option>Roofing</option><option>Flooring &amp; Tile</option><option>Interior Painting</option><option>Exterior Painting</option><option>Siding</option><option>Windows &amp; Doors</option><option>Masonry</option><option>Carpentry</option><option>General Repairs</option><option>Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label for="est-city">City or ZIP Code</label><input type="text" id="est-city" name="city" autocomplete="postal-code"></div>
+        <div class="form-group"><label for="est-contact-pref">Preferred Contact</label>
+          <select id="est-contact-pref" name="contact_preference"><option value="">Any</option><option>Phone Call</option><option>Text Message</option><option>Email</option></select>
+        </div>
+      </div>
+      <div class="form-group"><label for="est-message">Project Description</label><textarea id="est-message" name="message" rows="3" placeholder="Tell us about your project..."></textarea></div>
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Request &#8594;</button>
+    </form>
+    <div class="estimate-success" id="estimateSuccess" style="display:none;">
+      <div style="font-size:2rem;margin-bottom:0.5rem;">&#9989;</div>
+      <h3 style="color:var(--white);margin-bottom:8px;">Request Received!</h3>
+      <p>We'll get back to you within 24 hours. For immediate assistance, call <a href="tel:+15165219815">(516) 521-9815</a>.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Mobile Menu */
+function toggleMobileMenu(btn){var nav=document.querySelector('.nav-links');var open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);nav.classList.toggle('nav-open',!open);btn.innerHTML=open?'&#9776;':'&#10005;';document.body.style.overflow=open?'':'hidden';}
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){var nav=document.querySelector('.nav-links');var btn=document.querySelector('.nav-toggle');if(nav.classList.contains('nav-open')){nav.classList.remove('nav-open');btn.setAttribute('aria-expanded','false');btn.innerHTML='&#9776;';document.body.style.overflow='';}});});
+
+/* Estimate Modal */
+function openEstimate(e){if(e)e.preventDefault();document.getElementById('estimateModal').classList.add('active');document.body.style.overflow='hidden';var m=document.querySelector('.mobile-cta');if(m)m.style.display='none';}
+function closeEstimate(){document.getElementById('estimateModal').classList.remove('active');document.body.style.overflow='';var m=document.querySelector('.mobile-cta');if(m)m.style.display='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEstimate();});
+
+/* Form Submit */
+function submitEstimate(e){e.preventDefault();var form=e.target;var data=Object.fromEntries(new FormData(form));if(data._honey)return;var btn=form.querySelector('button[type="submit"]');btn.disabled=true;btn.textContent='Sending...';setTimeout(function(){form.style.display='none';document.getElementById('estimateSuccess').style.display='block';},800);}
+
+/* Scroll Reveal */
+var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('revealed');observer.unobserve(entry.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el);});
+
+/* Floating Estimate Button */
+var floatBtn=document.getElementById('floatingBtn');
+window.addEventListener('scroll',function(){if(window.scrollY>400){floatBtn.style.transform='translateY(0)';floatBtn.style.opacity='1';}else{floatBtn.style.transform='translateY(120px)';floatBtn.style.opacity='0';}});
+
+/* Gallery Filter */
+document.querySelectorAll('.filter-tab').forEach(function(tab){
+  tab.addEventListener('click',function(){
+    document.querySelectorAll('.filter-tab').forEach(function(t){t.classList.remove('active');});
+    tab.classList.add('active');
+    var cat=tab.getAttribute('data-filter');
+    document.querySelectorAll('.gallery-item').forEach(function(item){
+      if(cat==='all'||item.getAttribute('data-category')===cat){item.setAttribute('data-hidden','false');item.style.display='';}
+      else{item.setAttribute('data-hidden','true');item.style.display='none';}
+    });
+  });
+});
+
+/* Phone Click Tracking */
+document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"]');if(a&&typeof gtag==='function'){gtag('event','phone_click',{event_category:'contact',event_label:a.href,transport_type:'beacon'});}});
+</script>
+
+</body>
+</html>
