@@ -922,7 +922,7 @@ a:hover { color: var(--green-light); }
 /* ═══════════════════════════════════════
    HERO — Clipped + Video
    ═══════════════════════════════════════ */
-.hero-clipped { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); margin-bottom: -6vw; }
+.hero-clipped { margin-bottom: 0; }
 .hero-video {
   position: absolute; inset: 0; width: 100%; height: 100%;
   object-fit: cover; opacity: 0; transition: opacity 1.2s ease;
@@ -1027,7 +1027,7 @@ a:hover { color: var(--green-light); }
   position: relative; min-height: 420px;
   display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .photo-break-overlay { position: absolute; inset: 0; background: rgba(13,13,13,0.78); }
 .photo-break-content {
