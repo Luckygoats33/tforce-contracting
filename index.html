@@ -92,223 +92,346 @@
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="main">
-  <div class="hero-pattern"></div>
+<!-- ═══════════════════════════════════════
+     HERO — Full-screen image + video
+     ═══════════════════════════════════════ -->
+<section class="hero hero-clipped" id="main">
+  <div class="hero-bg" style="background-image:url('images/hero-construction.png');"></div>
+  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline poster="images/hero-construction.png">
+    <source src="images/hero-video.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>All Your Residential Contracting Needs. <span>One Reliable Team.</span></h1>
     <div class="hero-services">
-      <span>Kitchens</span>
-      <span>Bathrooms</span>
-      <span>Roofing</span>
-      <span>Flooring</span>
-      <span>Painting</span>
-      <span>Siding</span>
-      <span>Windows</span>
-      <span>Masonry</span>
-      <span>Carpentry</span>
+      <span class="reveal stagger-1">Kitchens</span>
+      <span class="reveal stagger-2">Bathrooms</span>
+      <span class="reveal stagger-3">Roofing</span>
+      <span class="reveal stagger-4">Flooring</span>
+      <span class="reveal stagger-5">Painting</span>
+      <span class="reveal stagger-6">Siding</span>
     </div>
-    <p class="hero-sub">T-Force Contracting provides dependable residential construction, remodeling, repair, and improvement services for homeowners on Long Island.</p>
-    <div class="hero-actions">
-      <a href="#" class="btn-primary" onclick="openEstimate(event)">Request a Free Estimate &#8594;</a>
+    <h1 class="reveal">Your Home. <span>Our Craft.</span></h1>
+    <p class="hero-sub reveal">Full-service residential contracting for Long Island homeowners. From concept to completion &mdash; kitchens, bathrooms, roofing, flooring, and everything in between.</p>
+    <div class="hero-actions reveal">
+      <a href="#" class="btn-primary" onclick="openEstimate(event)">Get Your Free Estimate &#8594;</a>
       <a href="tel:+15165219815" class="btn-outline">&#9742; (516) 521-9815</a>
     </div>
   </div>
-  <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Section transition">
-    <path d="M0,40 C120,80 240,10 360,50 C480,90 540,20 720,60 C900,100 1020,30 1140,55 C1260,80 1380,25 1440,45 L1440,120 L0,120 Z" fill="#252525" opacity="0.4"/>
-    <path d="M0,55 C160,25 320,85 480,50 C640,15 800,75 960,45 C1120,15 1280,70 1440,50 L1440,120 L0,120 Z" fill="#252525" opacity="0.65"/>
-    <path d="M0,70 C200,50 400,90 600,62 C800,34 1000,82 1200,58 C1320,42 1400,68 1440,62 L1440,120 L0,120 Z" fill="#252525"/>
-  </svg>
 </section>
 
-<!-- TRUST BAR -->
-<div class="badge-strip">
+<!-- ═══════════════════════════════════════
+     STATS COUNTER BAR
+     ═══════════════════════════════════════ -->
+<div class="stats-counter">
   <div class="wrap">
-    <div class="badge-row">
-      <div class="badge"><span class="badge-icon">&#9989;</span> <span class="highlight">Free Estimates</span></div>
-      <div class="badge"><span class="badge-icon">&#127968;</span> Residential Services</div>
-      <div class="badge"><span class="badge-icon">&#128172;</span> Reliable Communication</div>
-      <div class="badge"><span class="badge-icon">&#128736;</span> Quality Workmanship</div>
-      <div class="badge"><span class="badge-icon">&#128274;</span> Licensed &bull; Insured</div>
+    <div class="stats-row">
+      <div class="stat-counter reveal stagger-1">
+        <span class="stat-num" data-target="500" data-suffix="+">0</span>
+        <span class="stat-desc">Projects Completed</span>
+      </div>
+      <div class="stat-counter reveal stagger-2">
+        <span class="stat-num" data-target="10" data-suffix="+">0</span>
+        <span class="stat-desc">Years Experience</span>
+      </div>
+      <div class="stat-counter reveal stagger-3">
+        <span class="stat-num" data-target="100" data-suffix="%">0</span>
+        <span class="stat-desc">Satisfaction Rate</span>
+      </div>
+      <div class="stat-counter reveal stagger-4">
+        <span class="stat-num" data-target="24" data-suffix="hr">0</span>
+        <span class="stat-desc">Response Time</span>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- SERVICES -->
-<section class="content-section services-section">
-  <div class="wrap" style="position:relative;">
-    <div class="orb orb-green" style="top:-100px;right:-150px;"></div>
+<!-- ═══════════════════════════════════════
+     SERVICES — Bento Grid
+     ═══════════════════════════════════════ -->
+<section class="content-section">
+  <div class="wrap">
     <p class="section-label reveal">What We Do</p>
     <h2 class="section-title reveal">Residential Contracting Services</h2>
     <p class="section-subtitle reveal">From kitchens and bathrooms to roofing, flooring, painting, and more &mdash; one team for every home improvement project.</p>
-    <div class="service-grid">
 
-      <a href="services/kitchen-remodeling.html" class="service-card reveal stagger-1">
-        <div class="service-icon">&#127859;</div>
-        <h3>Kitchens &amp; Bathrooms</h3>
-        <p>Complete kitchen and bathroom remodeling including cabinets, countertops, tile, fixtures, and finishes.</p>
-        <span class="learn">Learn More &#8594;</span>
+    <div class="bento-grid">
+      <a href="services/kitchen-remodeling.html" class="bento-card featured reveal stagger-1">
+        <img src="images/svc-kitchen.png" alt="Modern kitchen renovation with white quartz countertops and dark cabinetry" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Most Popular</span>
+          <h3>Kitchen Remodeling</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
 
-      <a href="services/roofing.html" class="service-card reveal stagger-2">
-        <div class="service-icon">&#127969;</div>
-        <h3>Roofing &amp; Exterior</h3>
-        <p>Roof repairs, replacements, siding installation, and exterior improvements to protect your home.</p>
-        <span class="learn">Learn More &#8594;</span>
+      <a href="services/bathroom-remodeling.html" class="bento-card reveal stagger-2">
+        <img src="images/svc-bathroom.png" alt="Luxury bathroom remodel with walk-in shower and freestanding tub" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Bathrooms</span>
+          <h3>Bathroom Remodeling</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
 
-      <a href="services/flooring-and-tile.html" class="service-card reveal stagger-3">
-        <div class="service-icon">&#129521;</div>
-        <h3>Flooring &amp; Tile</h3>
-        <p>Hardwood, laminate, vinyl, and tile installation for every room in your home.</p>
-        <span class="learn">Learn More &#8594;</span>
+      <a href="services/roofing.html" class="bento-card reveal stagger-3">
+        <img src="images/svc-roofing.png" alt="Professional roofer installing shingles on residential home" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Exterior</span>
+          <h3>Roofing</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
 
-      <a href="services/painting.html" class="service-card reveal stagger-4">
-        <div class="service-icon">&#127912;</div>
-        <h3>Painting</h3>
-        <p>Interior and exterior painting with professional preparation, clean lines, and lasting finishes.</p>
-        <span class="learn">Learn More &#8594;</span>
+      <a href="services/flooring-and-tile.html" class="bento-card reveal stagger-4">
+        <img src="images/svc-flooring.png" alt="Hardwood floor installation in herringbone pattern" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Flooring</span>
+          <h3>Flooring &amp; Tile</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
 
-      <a href="services/windows-and-doors.html" class="service-card reveal stagger-5">
-        <div class="service-icon">&#128423;</div>
-        <h3>Windows, Doors &amp; Siding</h3>
-        <p>Window and door replacements, siding installation, and exterior cladding for energy efficiency and curb appeal.</p>
-        <span class="learn">Learn More &#8594;</span>
+      <a href="services/painting.html" class="bento-card featured reveal stagger-5">
+        <img src="images/svc-painting.png" alt="Professional interior painting with crisp clean lines" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Interior &amp; Exterior</span>
+          <h3>Painting</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
 
-      <a href="services/masonry.html" class="service-card reveal stagger-6">
-        <div class="service-icon">&#129521;</div>
-        <h3>Masonry &amp; Carpentry</h3>
-        <p>Brick, stone, and concrete work plus custom carpentry, trim, and millwork for residential projects.</p>
-        <span class="learn">Learn More &#8594;</span>
+      <a href="services/siding.html" class="bento-card reveal stagger-6">
+        <img src="images/svc-siding.png" alt="New vinyl siding installation on suburban home" loading="lazy" decoding="async">
+        <div class="bento-overlay"></div>
+        <div class="bento-content">
+          <span class="bento-label">Exterior</span>
+          <h3>Siding</h3>
+          <p class="bento-link">View Service &#8594;</p>
+        </div>
       </a>
+    </div>
 
+    <div style="text-align:center;margin-top:32px;">
+      <a href="services.html" class="btn-outline" style="display:inline-flex;">View All Services &#8594;</a>
     </div>
   </div>
 </section>
 
-<!-- WHY CHOOSE T-FORCE -->
-<section class="trust-section">
-  <div class="wrap" style="position:relative;">
-    <p class="section-label reveal" style="color:var(--green-light);">Why Homeowners Choose T-Force</p>
-    <h2 class="section-title reveal" style="color:#fff;">One Contractor for All Your Home Projects</h2>
-    <p class="section-subtitle reveal" style="color:rgba(255,255,255,0.65);">We handle multiple trades under one roof so you get consistent quality, clear communication, and a single point of contact from start to finish.</p>
-    <div class="reason-grid">
-      <div class="reason-card reveal stagger-1">
+<!-- ═══════════════════════════════════════
+     FULL-BLEED PHOTO BREAK
+     ═══════════════════════════════════════ -->
+<section class="photo-break" style="background-image:url('images/project-before-after.png');">
+  <div class="photo-break-overlay"></div>
+  <div class="photo-break-content reveal">
+    <div class="accent-line"></div>
+    <blockquote>Quality work speaks for itself. Every project we complete is a testament to our commitment to craftsmanship.</blockquote>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY CHOOSE US — Split Screen
+     ═══════════════════════════════════════ -->
+<section class="split-section">
+  <div class="split-image">
+    <img src="images/team-photo.png" alt="T-Force Contracting team on a residential job site" loading="lazy" decoding="async">
+  </div>
+  <div class="split-text">
+    <p class="section-label reveal" style="text-align:left;color:var(--green-light);">Why Homeowners Choose T-Force</p>
+    <h2 class="reveal" style="color:var(--white);font-size:clamp(1.4rem,3vw,2rem);margin-bottom:32px;">One Contractor for Every Home Project</h2>
+
+    <div class="reason-item reveal stagger-1">
+      <div class="reason-icon">&#10003;</div>
+      <div>
         <h3>One Team, Multiple Trades</h3>
         <p>No juggling subcontractors. T-Force handles kitchens, bathrooms, roofing, painting, flooring, and more &mdash; all in-house.</p>
       </div>
-      <div class="reason-card reveal stagger-2">
+    </div>
+
+    <div class="reason-item reveal stagger-2">
+      <div class="reason-icon">&#10003;</div>
+      <div>
         <h3>Clear Communication</h3>
-        <p>You'll always know what's happening on your project. We provide detailed estimates, regular updates, and answer your calls.</p>
+        <p>Detailed estimates, regular updates, and we always answer your calls. You'll never be left guessing.</p>
       </div>
-      <div class="reason-card reveal stagger-3">
+    </div>
+
+    <div class="reason-item reveal stagger-3">
+      <div class="reason-icon">&#10003;</div>
+      <div>
         <h3>Quality Workmanship</h3>
-        <p>Every project is built to last. We use quality materials, proven methods, and stand behind our work.</p>
+        <p>Quality materials, proven methods, and we stand behind every project we complete.</p>
       </div>
-      <div class="reason-card reveal stagger-4">
+    </div>
+
+    <div class="reason-item reveal stagger-4">
+      <div class="reason-icon">&#10003;</div>
+      <div>
         <h3>Respectful Jobsite Practices</h3>
-        <p>We protect your home during construction. Clean jobsites, dust barriers, drop cloths, and thorough daily cleanup.</p>
+        <p>Dust barriers, drop cloths, and thorough daily cleanup. We treat your home like our own.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="content-section process-section">
+<!-- ═══════════════════════════════════════
+     PROJECT SHOWCASE — Gallery Mosaic
+     ═══════════════════════════════════════ -->
+<section class="content-section" style="background:var(--charcoal-deep);">
+  <div class="wrap">
+    <p class="section-label reveal">Our Work</p>
+    <h2 class="section-title reveal">Recent Projects</h2>
+    <p class="section-subtitle reveal">Browse some of our completed residential projects across Long Island.</p>
+
+    <div class="gallery-mosaic">
+      <a href="gallery.html" class="gallery-item reveal stagger-1">
+        <img src="images/svc-kitchen.png" alt="Kitchen remodel project" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Kitchen Remodel &#8594;</span></div>
+      </a>
+      <a href="gallery.html" class="gallery-item reveal stagger-2">
+        <img src="images/svc-bathroom.png" alt="Bathroom renovation project" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Bathroom Reno &#8594;</span></div>
+      </a>
+      <a href="gallery.html" class="gallery-item reveal stagger-3">
+        <img src="images/svc-flooring.png" alt="Hardwood flooring project" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Hardwood Floors &#8594;</span></div>
+      </a>
+      <a href="gallery.html" class="gallery-item reveal stagger-4">
+        <img src="images/svc-masonry.png" alt="Stone masonry project" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Masonry Work &#8594;</span></div>
+      </a>
+      <a href="gallery.html" class="gallery-item reveal stagger-5">
+        <img src="images/svc-carpentry.png" alt="Custom carpentry built-ins" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Custom Carpentry &#8594;</span></div>
+      </a>
+      <a href="gallery.html" class="gallery-item reveal stagger-6">
+        <img src="images/svc-windows.png" alt="Window installation project" loading="lazy" decoding="async">
+        <div class="gallery-hover"><span>Window Install &#8594;</span></div>
+      </a>
+    </div>
+
+    <div style="text-align:center;margin-top:32px;">
+      <a href="gallery.html" class="btn-primary" style="display:inline-flex;">View All Projects &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS TIMELINE
+     ═══════════════════════════════════════ -->
+<section class="content-section">
   <div class="wrap">
     <p class="section-label reveal">How It Works</p>
     <h2 class="section-title reveal">Your Project in 5 Steps</h2>
     <p class="section-subtitle reveal">From first call to finished project &mdash; here's what to expect when you work with T-Force.</p>
-    <div class="process-grid">
-      <div class="process-step reveal stagger-1">
-        <h3>Contact T-Force</h3>
-        <p>Call us or fill out the estimate form. Tell us about your project.</p>
+
+    <div class="timeline">
+      <div class="timeline-step reveal">
+        <div class="step-content">
+          <h3>Contact T-Force</h3>
+          <p>Call us or fill out the estimate form. Tell us about your project and we'll schedule a visit.</p>
+        </div>
+        <div class="step-number">1</div>
+        <div class="step-spacer"></div>
       </div>
-      <div class="process-step reveal stagger-2">
-        <h3>Schedule an Estimate</h3>
-        <p>We'll visit your home to assess the work and discuss your goals.</p>
+
+      <div class="timeline-step reveal">
+        <div class="step-spacer"></div>
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Free On-Site Estimate</h3>
+          <p>We visit your home to assess the work, discuss your goals, and take measurements.</p>
+        </div>
       </div>
-      <div class="process-step reveal stagger-3">
-        <h3>Review the Plan</h3>
-        <p>Receive a detailed estimate with scope, materials, timeline, and pricing.</p>
+
+      <div class="timeline-step reveal">
+        <div class="step-content">
+          <h3>Review the Plan</h3>
+          <p>Receive a detailed estimate with scope, materials, timeline, and transparent pricing.</p>
+        </div>
+        <div class="step-number">3</div>
+        <div class="step-spacer"></div>
       </div>
-      <div class="process-step reveal stagger-4">
-        <h3>Approve the Work</h3>
-        <p>Once you're comfortable, we schedule your project and get started.</p>
+
+      <div class="timeline-step reveal">
+        <div class="step-spacer"></div>
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Build &amp; Transform</h3>
+          <p>Our team gets to work. Regular updates, clean jobsite, and quality craftsmanship every step.</p>
+        </div>
       </div>
-      <div class="process-step reveal stagger-5">
-        <h3>Project Complete</h3>
-        <p>We finish the job, walk through it with you, and make sure you're satisfied.</p>
+
+      <div class="timeline-step reveal">
+        <div class="step-content">
+          <h3>Final Walkthrough</h3>
+          <p>We walk through the completed project together and make sure you're 100% satisfied.</p>
+        </div>
+        <div class="step-number">5</div>
+        <div class="step-spacer"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
-<section class="content-section reviews-section">
+<!-- ═══════════════════════════════════════
+     REVIEWS — Featured Cards
+     ═══════════════════════════════════════ -->
+<section class="content-section" style="background:var(--charcoal-deep);border-top:1px solid var(--border);">
   <div class="wrap">
     <p class="section-label reveal">Customer Reviews</p>
     <h2 class="section-title reveal">What Our Clients Say</h2>
     <p class="section-subtitle reveal">Real feedback from homeowners on Long Island.</p>
-    <div class="review-grid">
 
-      <div class="review-card reveal stagger-1">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"T-Force completely transformed our kitchen. From demolition to the final coat of paint, the crew was professional, on time, and meticulous. We couldn't be happier with the results."</p>
-        <p class="review-author">Satisfied Homeowner</p>
-        <p class="review-location">Nassau County, NY</p>
+    <div class="reviews-featured">
+      <div class="review-large reveal">
+        <div class="review-stars" style="position:relative;z-index:1;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text" style="position:relative;z-index:1;font-size:1.1rem;line-height:1.7;margin:16px 0;">"T-Force completely transformed our kitchen. From demolition to the final coat of paint, the crew was professional, on time, and meticulous. We couldn't be happier with the results. They handled everything &mdash; cabinets, countertops, flooring, and electrical &mdash; all under one roof."</p>
+        <p class="review-author" style="position:relative;z-index:1;"><strong>Satisfied Homeowner</strong></p>
+        <p class="review-location" style="position:relative;z-index:1;">Nassau County, NY &mdash; Kitchen Remodel</p>
       </div>
 
-      <div class="review-card reveal stagger-2">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"We needed a new roof and siding after storm damage. T-Force handled everything &mdash; insurance coordination, materials, and installation. The house looks brand new."</p>
-        <p class="review-author">Satisfied Homeowner</p>
-        <p class="review-location">Long Island, NY</p>
-      </div>
+      <div class="review-small-stack">
+        <div class="review-small reveal stagger-1">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"We needed a new roof and siding after storm damage. T-Force handled everything &mdash; insurance coordination, materials, and installation. The house looks brand new."</p>
+          <p class="review-author"><strong>Satisfied Homeowner</strong></p>
+          <p class="review-location">Long Island, NY</p>
+        </div>
 
-      <div class="review-card reveal stagger-3">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"What I appreciated most was the communication. They showed up when they said they would, kept the site clean, and the tile work in our bathroom is flawless."</p>
-        <p class="review-author">Satisfied Homeowner</p>
-        <p class="review-location">Nassau County, NY</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT / EXPERTISE -->
-<section class="content-section expertise-bg">
-  <div class="wrap">
-    <div class="expertise-section">
-      <div class="expertise-text">
-        <p class="section-label" style="text-align:left;">About T-Force Contracting</p>
-        <h2>Residential Improvements Built to Last</h2>
-        <p>T-Force Contracting is a full-service residential contractor serving homeowners across Long Island. We specialize in remodeling, repairs, and home improvements &mdash; from kitchens and bathrooms to roofing, flooring, painting, siding, windows, masonry, and carpentry.</p>
-        <p>Our team is committed to quality workmanship, honest communication, and treating your home with respect. Every project gets detailed planning, professional execution, and a thorough walkthrough before we call it done.</p>
-        <div class="expertise-stats">
-          <div class="stat"><span class="stat-number">10+</span><span class="stat-label">Services</span></div>
-          <div class="stat"><span class="stat-number">100%</span><span class="stat-label">Residential Focus</span></div>
+        <div class="review-small reveal stagger-2">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"What I appreciated most was the communication. They showed up when they said they would, kept the site clean, and the tile work in our bathroom is flawless."</p>
+          <p class="review-author"><strong>Satisfied Homeowner</strong></p>
+          <p class="review-location">Nassau County, NY</p>
         </div>
       </div>
-      <div class="expertise-image">
-        <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--charcoal-mid),var(--charcoal-deep));border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font-size:3rem;color:var(--green-glow);">&#127968;</div>
-      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:32px;">
+      <a href="reviews.html" class="btn-outline" style="display:inline-flex;">Read All Reviews &#8594;</a>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREAS -->
-<section class="content-section" style="background:var(--charcoal-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+<!-- ═══════════════════════════════════════
+     SERVICE AREAS
+     ═══════════════════════════════════════ -->
+<section class="content-section" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
   <div class="wrap">
-    <p class="section-label reveal">Areas We Serve</p>
-    <h2 class="section-title reveal">Serving Long Island Homeowners</h2>
-    <p class="section-subtitle reveal">T-Force Contracting provides residential construction and home improvement services across Nassau County, Suffolk County, and surrounding communities.</p>
-    <div class="area-tags" style="justify-content:center;">
+    <div class="areas-header reveal">
+      <div class="areas-pin"></div>
+      <div>
+        <p class="section-label" style="text-align:left;margin-bottom:4px;">Areas We Serve</p>
+        <h2 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:var(--white);">Serving Long Island Homeowners</h2>
+      </div>
+    </div>
+    <p class="section-subtitle reveal" style="text-align:left;max-width:700px;">T-Force Contracting provides residential construction and home improvement services across Nassau County, Suffolk County, and surrounding communities.</p>
+    <div class="area-tags reveal" style="justify-content:flex-start;">
       <a href="contact.html" class="area-tag">Hempstead</a>
       <a href="contact.html" class="area-tag">Freeport</a>
       <a href="contact.html" class="area-tag">Garden City</a>
@@ -331,14 +454,17 @@
   </div>
 </section>
 
-<!-- CTA SECTION -->
-<section class="cta-section">
+<!-- ═══════════════════════════════════════
+     CTA — Full-bleed with background
+     ═══════════════════════════════════════ -->
+<section class="cta-section cta-bg" style="background-image:url('images/team-photo.png');">
+  <div class="cta-overlay"></div>
   <div class="wrap" style="position:relative;z-index:2;">
     <h2>Ready to Improve Your Home?</h2>
     <p>Get a free, no-obligation estimate. We'll assess your needs, explain your options, and provide honest pricing.</p>
     <a href="tel:+15165219815" class="cta-phone">(516) 521-9815</a>
     <div class="cta-actions">
-      <a href="#" class="btn-white" onclick="openEstimate(event)">Get a Free Estimate &#8594;</a>
+      <a href="#" class="btn-white glow-pulse" onclick="openEstimate(event)">Get a Free Estimate &#8594;</a>
       <a href="contact.html" class="btn-outline-white">Contact Us</a>
     </div>
   </div>
@@ -547,7 +673,6 @@ function submitEstimate(e){
   if(data._honey){return;}
   var btn=form.querySelector('button[type="submit"]');
   btn.disabled=true;btn.textContent='Sending...';
-  /* TODO: Connect to form handler endpoint */
   setTimeout(function(){
     form.style.display='none';
     document.getElementById('estimateSuccess').style.display='block';
@@ -579,6 +704,43 @@ document.addEventListener('click',function(e){
     gtag('event','phone_click',{event_category:'contact',event_label:a.href,transport_type:'beacon'});
   }
 });
+
+/* Counter Animation */
+function animateCounters(){
+  document.querySelectorAll('.stat-num').forEach(function(el){
+    var target=parseInt(el.getAttribute('data-target'));
+    var suffix=el.getAttribute('data-suffix')||'';
+    var duration=2000;
+    var startTime=null;
+    function step(timestamp){
+      if(!startTime)startTime=timestamp;
+      var progress=Math.min((timestamp-startTime)/duration,1);
+      var eased=1-Math.pow(1-progress,3);
+      el.textContent=Math.floor(eased*target)+suffix;
+      if(progress<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+var counterObserver=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      animateCounters();
+      counterObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.3});
+var statsSection=document.querySelector('.stats-counter');
+if(statsSection)counterObserver.observe(statsSection);
+
+/* Hero Video Swap */
+var heroVideo=document.getElementById('heroVideo');
+if(heroVideo){
+  heroVideo.addEventListener('canplaythrough',function(){
+    heroVideo.style.opacity='1';
+    heroVideo.play();
+  });
+}
 </script>
 
 </body>
