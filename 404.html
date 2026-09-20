@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Page Not Found | T-Force Contracting</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="T-Force Contracting - home">
+      <div class="nav-logo-text">
+        <span class="logo-name">T-FORCE</span>
+        <span class="logo-tagline">Contracting</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Open menu" onclick="toggleMobileMenu(this)">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Projects</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="nav-cta" onclick="openEstimate(event)">Free Estimate</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header" id="main" style="min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+  <h1 style="font-size:clamp(4rem,10vw,8rem);color:var(--green);margin-bottom:8px;">404</h1>
+  <p style="font-size:1.2rem;color:var(--white);margin-bottom:8px;">Page Not Found</p>
+  <p style="max-width:400px;">The page you're looking for doesn't exist or has been moved.</p>
+  <div style="margin-top:28px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center;">
+    <a href="index.html" class="btn-primary">Back to Home &#8594;</a>
+    <a href="tel:+15165219815" class="btn-outline">&#9742; (516) 521-9815</a>
+  </div>
+</div>
+
+<div class="mobile-cta">
+  <div class="mobile-cta-row">
+    <a href="index.html" class="cta-estimate">&#127968; Back to Home</a>
+    <a href="tel:+15165219815" class="cta-call">&#9742; Call Now</a>
+  </div>
+</div>
+
+<script>
+function toggleMobileMenu(btn){
+  var nav=document.querySelector('.nav-links');
+  var open=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!open);
+  nav.classList.toggle('nav-open',!open);
+  btn.innerHTML=open?'&#9776;':'&#10005;';
+  document.body.style.overflow=open?'':'hidden';
+}
+</script>
+
+</body>
+</html>
