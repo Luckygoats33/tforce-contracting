@@ -215,6 +215,7 @@ a:hover { color: var(--green-light); }
 }
 .hero-services span::after { content: '·'; margin-left: 16px; color: var(--purple); }
 .hero-services span:last-child::after { display: none; }
+.hero-clipped .hero-services span::after { display: none; }
 
 .hero-sub {
   font-size: clamp(0.95rem, 1.8vw, 1.15rem);
@@ -1258,7 +1259,6 @@ a:hover { color: var(--green-light); }
   .badge-row { justify-content: flex-start; }
 
   /* Hero clipped */
-  .hero-clipped { clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%); margin-bottom: -3vw; }
   .hero-clipped .hero-content { padding: 120px 24px 100px; }
 
   /* Bento grid */
